@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "../components/Hero.js";
 import Projects from "../components/Projects.js";
+import CreateProject from "../components/CreateProject.js";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
           Load More{" "}
         </button>
       </div>
+      <CreateProject/>
     </>
   );
 };

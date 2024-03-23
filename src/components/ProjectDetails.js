@@ -6,7 +6,7 @@ const ProjectDetails = () => {
   return (
     <div className="py-24 px-6 flex justify-center">
       <div className="flex justify-center items-center flex-col md:w-2/3">
-        <div className="flex justify-start items-start sm:space-x-4 flex-wrap">
+        <div className="flex justify-start items-start w-full sm:space-x-4 flex-wrap">
           <img
             src="https://www.hdwallpapers.in/download/cell_biology_background_hd_wallpaper_cellular-HD.jpg"
             alt="title"
@@ -50,14 +50,14 @@ const ProjectDetails = () => {
             style={{ width: "50%" }}
           ></div>
         </div>
-        <div className="flex justify-between items-center font-bold mt-2">
+        <div className="flex justify-between items-center w-full font-bold mt-2">
           <small>{3} ETH Raised</small>
           <small className="flex justify-start items-center">
             <FaEthereum />
             <span> {10} ETH </span>
           </small>
         </div>
-        <div className="flex justify-start space-x-2 mt-4 my-5">
+        <div className="flex justify-start w-full space-x-2 mt-4 my-5">
           <button
             type="button"
             className="inline-block px-6 py-2.5 bg-indigo-600 text-white font-medium rounded-full shadow-md hover:bg-indigo-700"

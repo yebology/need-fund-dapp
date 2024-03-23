@@ -5,7 +5,7 @@ import Identicon from "react-identicons";
 const ProjectBackers = () => {
   return (
     <div className="flex flex-col justify-center items-start w-full px-6 md:w-2/3 mx-auto">
-      <div className="max-h-[calc(100vh_-_20rem)] overflow-y-auto shadow-md rounded-md w-full">
+      <div className="max-h-[calc(100vh_-_20rem)] overflow-y-auto shadow-md rounded-md w-full mb-8">
         <table className="min-w-full">
           <thead className="border-b">
             <tr>
@@ -36,7 +36,7 @@ const ProjectBackers = () => {
             </tr>
           </thead>
           <tbody>
-            {Array(5)
+            {Array(10)
               .fill()
               .map((backing, i) => (
                 <tr key={i} className="border-b border-gray-200">
