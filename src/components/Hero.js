@@ -1,4 +1,5 @@
 import React from "react";
+import { setGlobalState } from "../backend/index.js"
 
 const Hero = () => {
   return (
@@ -12,6 +13,7 @@ const Hero = () => {
         <button
           type="button"
           className="inline-block px-6 py-2.5 bg-indigo-600 text-white font-medium rounded-full shadow-md hover:bg-indigo-700"
+          onClick={() => setGlobalState('createModal', 'scale-100')}
         >
           {" "}
           Add Project{" "}

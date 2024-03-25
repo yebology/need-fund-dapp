@@ -1,6 +1,7 @@
 import React from "react";
 import Identicons from "react-identicons";
 import { FaEthereum } from "react-icons/fa";
+import { setGlobalState  } from "../backend/index.js";
 
 const ProjectDetails = () => {
   return (
@@ -61,6 +62,7 @@ const ProjectDetails = () => {
           <button
             type="button"
             className="inline-block px-6 py-2.5 bg-indigo-600 text-white font-medium rounded-full shadow-md hover:bg-indigo-700"
+            onClick={() => setGlobalState("investScale", "scale-100")}
           >
             {" "}
             Invest Project{" "}
@@ -68,6 +70,7 @@ const ProjectDetails = () => {
           <button
             type="button"
             className="inline-block px-6 py-2.5 bg-orange-600 text-white font-medium rounded-full shadow-md hover:bg-orange-700"
+            onClick={() => setGlobalState("updateScale", "scale-100")}
           >
             {" "}
             Edit Project{" "}
@@ -75,6 +78,7 @@ const ProjectDetails = () => {
           <button
             type="button"
             className="inline-block px-6 py-2.5 bg-red-600 text-white font-medium rounded-full shadow-md hover:bg-red-700"
+            onClick={() => setGlobalState("deleteScale", "scale-100")}
           >
             {" "}
             Delete Project{" "}

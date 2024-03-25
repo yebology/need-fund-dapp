@@ -2,20 +2,20 @@ import React from "react";
 import { FaTimes } from "react-icons/fa";
 import { useGlobalState, setGlobalState } from "../backend/index.js";
 
-const CreateProject = () => {
-  const [createScale] = useGlobalState("createScale");
+const UpdateProject = () => {
+  const [updateScale] = useGlobalState("updateScale");
   return (
     <div
-      className={`fixed flex items-center justify-center w-screen h-screen inset-0 bg-black bg-opacity-50 transform transition-transform duration-300 ${createScale}`}
+      className={`fixed flex items-center justify-center w-screen h-screen inset-0 bg-black bg-opacity-50 transform transition-transform duration-300 ${updateScale}`}
     >
       <div className="bg-white shadow-xl shadow-black rounded-xl w-11/12 md:w-2/5 h-7/12 p-6">
         <form className="flex flex-col">
           <div className="flex justify-between items-center">
-            <p className="font-semibold">Create Project</p>
+            <p className="font-semibold">Edit Project</p>
             <button
               type="button"
               className="border-0 bg-transparent focus:outline-none"
-              onClick={() => setGlobalState("createScale", "scale-0")}
+              onClick={() => setGlobalState("updateScale", "scale-0")}
             >
               <FaTimes />
             </button>
@@ -89,4 +89,4 @@ const CreateProject = () => {
   );
 };
 
-export default CreateProject;
+export default UpdateProject;
